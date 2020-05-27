@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}
+  </title>
+  <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+  <header>
+    <h1>Michael Shanks</h1>
+    <nav>
+      <a href="/">🏡</a>
+      /
+      <a href="https://github.com/mjashanks">GitHub</a>
+      /
+      <a href="https://twitter.com/mjashanks">Twitter</a>
+    </nav>
+  </header>
+  <main>
+    {{ block "main" . }}
+    {{ end }}
+  </main>
+</body>
+</html>

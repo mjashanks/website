@@ -1,0 +1,19 @@
+{{ define "title" }}
+  Michael Shanks
+{{ end }}
+{{ define "main" }}
+  <p>
+    Engineer, Co-Founder & CEO of <a href="https://budibase.com">Budibase</a>
+  </p>
+  <h4 style="margin: 20px 0">Posts</h4>
+  {{ range where .Site.RegularPages "Section" "==" "blog" }}
+    <article>
+      <a href="{{ .Permalink }}">
+        <blockquote>
+            <h5>{{ .Title }}</h5>
+            <small>{{ dateFormat "Jan 2, 2006" .Date }}</small>
+        </blockquote>
+      </a>
+    </article>
+  {{ end }}
+{{ end }}
