@@ -3,9 +3,8 @@
 {{ end }}
 {{ define "main" }}
   <p>
-    Engineer, Co-Founder & CEO of <a href="https://budibase.com">Budibase</a>
+    Hi! I'm Michael - co-founder & CEO of <a href="https://budibase.com">Budibase</a>
   </p>
-  <h4 style="margin: 20px 0">Today, this is empty, tomorrow it might not be</h4>
   {{ range where .Site.RegularPages "Section" "==" "blog" }}
     <article>
       <a href="{{ .Permalink }}">
