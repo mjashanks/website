@@ -4,7 +4,7 @@ html, body {
   color: var(--darkest);
   margin: 0;
   padding: 0;
-  background-color: --bg;
+  background-color: var(--bg);
 }
 
 
@@ -32,11 +32,11 @@ header {
 }
 
 main {
-  padding-top: 3em;
   display: grid;
   align-items: start;
   justify-content: center;
   height: 100%;
+  padding: 3em var(--edge-padding) var(--edge-padding) var(--edge-padding);
 }
 
 h1 {
@@ -85,4 +85,5 @@ article small {
   --light: #3AAFA9;
   --dark: #2B7A78;
   --darkest: #17252A;
+  --edge-padding: 0.5em;
 }
